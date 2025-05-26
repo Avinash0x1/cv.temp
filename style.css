@@ -32,7 +32,38 @@ body.dark-mode {
   padding: 0;
   box-sizing: border-box;
 }
+.download-cv-link {
+    display: block; /* Make it take full width in its container if desired */
+    margin-top: 15px; /* Add some space above it */
+    background-color: var(--accent-color); /* Use your accent color */
+    color: white !important; /* Ensure text is white */
+    padding: 10px 18px;
+    border-radius: 25px; /* Pill shape */
+    text-decoration: none;
+    font-size: 0.95em;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+    border: none; /* If you want it to look more like a button */
+    cursor: pointer;
+}
 
+.download-cv-link:hover {
+    background-color: #c0392b; /* A darker shade of the accent color */
+    color: white !important;
+    text-decoration: none;
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.download-cv-link i {
+    margin-right: 8px;
+}
+
+/* Adjustments for when it's inside the sidebar profile section */
+.sidebar .profile-section .download-cv-link {
+    /* You might not need specific overrides if the general styles work well */
+}
 body {
   font-family: var(--font-secondary);
   line-height: 1.6;
