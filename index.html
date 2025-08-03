@@ -3,14 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Avinash Thakur - Resume</title>
+  <title>Avinash Thakur - Interactive Resume</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Interactive resume of Avinash Thakur - Aspiring IT Professional with expertise in logistics, sales, and technology.">
 </head>
 <body>
 
   <div class="resume-container">
-    <button id="theme-toggle" aria-label="Toggle theme">
+    <button id="theme-toggle" aria-label="Toggle dark/light theme" title="Switch Theme">
       <i class="fas fa-moon"></i>
       <i class="fas fa-sun"></i>
     </button>
@@ -18,61 +22,107 @@
     <!-- Left Column -->
     <aside class="sidebar">
       <div class="profile-section">
-        <img src="photo_2024-09-05_10-58-17.jpg" alt="Avinash Thakur" class="profile-pic">
+        <div class="profile-pic-container">
+          <img src="photo_2024-09-05_10-58-17.jpg" alt="Avinash Thakur - Professional Photo" class="profile-pic">
+          <div class="profile-pic-overlay">
+            <i class="fas fa-camera"></i>
+          </div>
+        </div>
         <h1>Avinash Thakur</h1>
         <p class="job-title">Aspiring IT Professional</p>
-        <a href="https://avinashthakur.com.np" target="_blank" class="website-link">
+        <a href="https://avinashthakur.com.np" target="_blank" class="website-link" title="Visit Personal Website">
             <i class="fas fa-globe"></i> Visit Website
         </a>
-        <p><a href="Avinash_Thakur_Resume.pdf" download="Avinash_Thakur_CV.pdf">Download my CV (PDF)</a></p>
-        </a>
-        <!-- !!! ADDED DOWNLOAD LINK HERE !!! -->
-        <a href="Avinash_Thakur_Resume.pdf" download="Avinash_Thakur_CV.pdf" class="download-cv-link">
+        <a href="Avinash_Thakur_Resume.pdf" download="Avinash_Thakur_CV.pdf" class="download-cv-link" title="Download PDF Resume">
             <i class="fas fa-download"></i> Download CV (PDF)
         </a>
       </div>
 
       <div class="contact-section section">
         <h2><i class="fas fa-address-book"></i> Contact</h2>
-        <p><i class="fas fa-phone"></i> <a href="tel:+977-9815498597">+977-9815498597</a></p>
-        <p><i class="fas fa-envelope"></i> <a href="mailto:avinashthakur0x1@gmail.com">avinashthakur0x1@gmail.com</a></p>
-        <p><i class="fas fa-link"></i> <a href="https://linktr.ee/avinash0x1" target="_blank">linktr.ee/avinash0x1</a></p>
-        <p><i class="fas fa-map-marker-alt"></i> Bhairahawa, Nepal (Example)</p>
+        <div class="contact-item">
+          <p><i class="fas fa-phone"></i> <a href="tel:+977-9815498597" title="Call Avinash">+977-9815498597</a></p>
+        </div>
+        <div class="contact-item">
+          <p><i class="fas fa-envelope"></i> <a href="mailto:avinashthakur0x1@gmail.com" title="Send Email">avinashthakur0x1@gmail.com</a></p>
+        </div>
+        <div class="contact-item">
+          <p><i class="fas fa-link"></i> <a href="https://linktr.ee/avinash0x1" target="_blank" title="Social Links">linktr.ee/avinash0x1</a></p>
+        </div>
+        <div class="contact-item">
+          <p><i class="fas fa-map-marker-alt"></i> Bhairahawa, Nepal</p>
+        </div>
       </div>
 
       <div class="profile-details-section section">
         <h2><i class="fas fa-user-circle"></i> Profile</h2>
-        <p><strong>DOB:</strong> 2001-11-13</p>
-        <p><strong>Marital Status:</strong> Single</p>
+        <div class="profile-detail">
+          <p><strong><i class="fas fa-birthday-cake"></i> DOB:</strong> 2001-11-13</p>
+        </div>
+        <div class="profile-detail">
+          <p><strong><i class="fas fa-heart"></i> Status:</strong> Single</p>
+        </div>
       </div>
 
       <div class="skills-section section">
         <h2><i class="fas fa-cogs"></i> Skills</h2>
         <ul class="skills-list">
-          <li>MS Dynamics NAV</li>
-          <li>Shipping & Receiving</li>
-          <li>Binning & Reporting</li>
-          <li>Pick and Pack</li>
-          <li>Inventory Management</li>
-          <li>Pallet Stacker, Jack</li>
-          <li>Microsoft Office Suite</li>
-          <li>Interpersonal Skills</li>
-          <li>Communication Skills</li>
-          <li>Problem-Solving</li>
-          <li>Analytical Skills</li>
-          <li>Excel & Presentation</li>
-          <li>Marketing & Sales</li>
+          <li data-level="expert"><i class="fas fa-star"></i> MS Dynamics NAV</li>
+          <li data-level="advanced"><i class="fas fa-truck"></i> Shipping & Receiving</li>
+          <li data-level="advanced"><i class="fas fa-chart-bar"></i> Binning & Reporting</li>
+          <li data-level="intermediate"><i class="fas fa-box"></i> Pick and Pack</li>
+          <li data-level="expert"><i class="fas fa-warehouse"></i> Inventory Management</li>
+          <li data-level="intermediate"><i class="fas fa-tools"></i> Pallet Stacker, Jack</li>
+          <li data-level="advanced"><i class="fab fa-microsoft"></i> Microsoft Office Suite</li>
+          <li data-level="expert"><i class="fas fa-users"></i> Interpersonal Skills</li>
+          <li data-level="expert"><i class="fas fa-comments"></i> Communication Skills</li>
+          <li data-level="advanced"><i class="fas fa-puzzle-piece"></i> Problem-Solving</li>
+          <li data-level="advanced"><i class="fas fa-brain"></i> Analytical Skills</li>
+          <li data-level="expert"><i class="fas fa-file-excel"></i> Excel & Presentation</li>
+          <li data-level="advanced"><i class="fas fa-chart-line"></i> Marketing & Sales</li>
         </ul>
       </div>
 
       <div class="languages-section section">
         <h2><i class="fas fa-language"></i> Languages</h2>
-        <p>English, Nepali, Hindi, Bhojpuri</p>
+        <div class="language-list">
+          <div class="language-item">
+            <span>English</span>
+            <div class="language-level">
+              <div class="level-bar" data-level="90"></div>
+            </div>
+          </div>
+          <div class="language-item">
+            <span>Nepali</span>
+            <div class="language-level">
+              <div class="level-bar" data-level="100"></div>
+            </div>
+          </div>
+          <div class="language-item">
+            <span>Hindi</span>
+            <div class="language-level">
+              <div class="level-bar" data-level="85"></div>
+            </div>
+          </div>
+          <div class="language-item">
+            <span>Bhojpuri</span>
+            <div class="language-level">
+              <div class="level-bar" data-level="95"></div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="hobbies-section section">
-        <h2><i class="fas fa-heart"></i> Hobbies</h2>
-        <p>Reading, Volunteering, Fitness, Gardening, Traveling, Continuous Learning</p>
+        <h2><i class="fas fa-heart"></i> Interests</h2>
+        <div class="hobbies-grid">
+          <span class="hobby-item"><i class="fas fa-book"></i> Reading</span>
+          <span class="hobby-item"><i class="fas fa-hands-helping"></i> Volunteering</span>
+          <span class="hobby-item"><i class="fas fa-dumbbell"></i> Fitness</span>
+          <span class="hobby-item"><i class="fas fa-seedling"></i> Gardening</span>
+          <span class="hobby-item"><i class="fas fa-plane"></i> Traveling</span>
+          <span class="hobby-item"><i class="fas fa-graduation-cap"></i> Learning</span>
+        </div>
       </div>
     </aside>
 
